@@ -5,6 +5,7 @@ using prg2._3_design_patterns;
 using prg2._4_functional_programming;
 using prg2._5_database_design;
 
+using System.Collections.Generic;
 
 namespace _0_main
 {
@@ -12,9 +13,12 @@ namespace _0_main
     {
         static void Main(string[] args)
         {
+            
            Console.WriteLine("Launching main");
-        
-           Intro i = new Intro(args);
+           CoffeeTest();
+
+
+           //Intro i = new Intro(args);
            //test(args);
           
            Console.ReadKey();
@@ -28,6 +32,25 @@ namespace _0_main
            */
         
         }
+        static void CoffeeTest()
+        {
+           MrCoffee lifesaver = new  MrCoffee();
+           CoffeeMaker a = new CoffeeMaker();
+           
+
+           lifesaver.AddGrains(5.0);
+           lifesaver.AddWater(12);
+           lifesaver.InsertFilter();
+
+           lifesaver.MakeCoffee();
+
+           //int k = lifesaver.AddGrains(4000000);
+        }
+        
+        static void Hw3Test()
+        {
+
+        }
         static void test(string [] args)
         {
               Intro i = new Intro(args);
@@ -36,6 +59,5 @@ namespace _0_main
               Functional_Programming f = new Functional_Programming(args);
               Database_Design dd = new Database_Design(args);
         }
-
     }
 }

@@ -11,10 +11,26 @@ namespace prg2._1_intro
             Console.WriteLine("Launched intro");
             List<string> students = new List<string>();
             
-            students.Add("Slosar");
-            students.Add("Engel");
-            students.Add("Yoon");
-            students.Add("Gallagher");
+            students.Add("");
+            students.Add("");
+            students.Add("");
+            students.Add("");
+
+            Dictionary<string,int> studentGrades = new Dictionary<string,int>();
+            studentGrades["yoon"] = 110;
+
+            
+
+
+            /* 
+            items = {}
+
+            */
+
+
+
+
+
 
             foreach(string student in students)
             {
@@ -26,7 +42,12 @@ namespace prg2._1_intro
             {
                 students.Add("empty spot");
             }
-        
+
+
+            for(int x = 10; x > 0 ; x--)
+            {
+                Console.WriteLine(x);
+            }
         /* 
             string answer = Console.ReadLine();
 
@@ -41,6 +62,7 @@ namespace prg2._1_intro
             bool xIsEqualToY = x == y;
 
             if(x % 2 ==0)
+
             {
                 Console.WriteLine("divisible by 2");
             }
