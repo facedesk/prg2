@@ -34,15 +34,15 @@ namespace _0_main
         }
         static void CoffeeTest()
         {
-           MrCoffee lifesaver = new  MrCoffee();
-           CoffeeMaker a = new CoffeeMaker();
+           //MrCoffee lifesaver = new  MrCoffee();
+           CoffeeMaker lifesaver = new CoffeeMaker();
            
 
            lifesaver.AddGrains(5.0);
            lifesaver.AddWater(12);
            lifesaver.InsertFilter();
 
-           lifesaver.MakeCoffee();
+           lifesaver.Make();
 
            //int k = lifesaver.AddGrains(4000000);
         }

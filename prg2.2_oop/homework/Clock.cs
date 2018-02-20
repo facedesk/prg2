@@ -8,7 +8,7 @@ namespace prg2._2_oop
         public Clock(int hours, int minutes, int seconds)
         {
             this.hours= hours;
-            this.mintues = minutes;
+            this.minutes = minutes;
             this.seconds = seconds;
 
         }

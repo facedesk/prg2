@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 
 namespace prg2._2_oop
@@ -21,3 +21,4 @@ namespace prg2._2_oop
         }
     }
 }
+*/
