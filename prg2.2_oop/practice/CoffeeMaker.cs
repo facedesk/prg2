@@ -7,27 +7,23 @@ namespace prg2._2_oop
         
         public CoffeeMaker()
         {
-            Ingredients = new Dictionary<Consumable, double>();
-            MaxIngredients = new Dictionary<Consumable,double>();
-            Ingredients[new Water()]= 0;
-            Ingredients[new Coffee()]=0;
-            Ingredients[new Grain()]=0;
-
-
+            Ingredients = new Dictionary<System.Type,Consumable>();
+            MaxIngredients = new Dictionary<System.Type,double>();
+            Ingredients[typeof(Water)]= new Water();
+            Ingredients[typeof(Grain)]= new Grain();
+            Ingredients[typeof(Coffee)]= new Coffee();
         }
         public void AddWater(double AmountOfWater)
         {
-            Ingredients[new Water()] = AmountOfWater;
-            Console.WriteLine(Ingredients[new Water()]);
-
+            Ingredients[typeof(Water)].quantity += AmountOfWater;            
         }
         public void AddGrains(double AmountOfGrains)
         {
-            
+            Ingredients[typeof(Grain)].quantity += AmountOfGrains;
         }
         public void InsertFilter()
         {
-
+            Ingredients[typeof(PaperFilter)].quantity += 1.0;
         }
         public override Consumable Make()
         {

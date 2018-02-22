@@ -2,9 +2,9 @@ using System;
 
 namespace prg2._2_oop
 {
-    public class Water : Consumable
+    public class PaperFilter : Consumable
     {
-        public Water()
+        public PaperFilter()
         {
             quantity=0;
         }
