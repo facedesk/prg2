@@ -4,9 +4,11 @@ namespace prg2._2_oop
 {
     public class Grain : Consumable
     {
+        public string RoastLevel;
+
         public Grain()
         {
-            quantity=0;
+            Quantity=0;
         }   
     }
 }

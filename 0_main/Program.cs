@@ -18,6 +18,9 @@ namespace _0_main
            CoffeeTest();
 
 
+            CoffeeMaker a = new CoffeeMaker();
+            
+
            //Intro i = new Intro(args);
            //test(args);
           
@@ -34,7 +37,7 @@ namespace _0_main
         }
         static void CoffeeTest()
         {
-            run();
+            
            //MrCoffee lifesaver = new  MrCoffee();
            CoffeeMaker lifesaver = new CoffeeMaker();
            

@@ -6,7 +6,7 @@ namespace prg2._2_oop
     {
         public PaperFilter()
         {
-            quantity=0;
+            Quantity=0;
         }
     }
 }
