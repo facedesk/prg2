@@ -23,13 +23,14 @@ namespace _0_main
         {
             Console.WriteLine("Im testing node");
             string done = "";
-            Node linkedList = new Node(0);
-            Node root = linkedList;
+            
+            Node<int> linkedList = new Node<int>(0);
+            Node<int> root = linkedList;
             while(done != "y")
             {
                 Console.WriteLine("Insert an integer for Linked List");
                 int value = Convert.ToInt32(Console.ReadLine());
-                linkedList.next = new Node(value,root);
+                linkedList.next = new Node<int>(value,root);
                 linkedList = linkedList.next;
                 Console.WriteLine("Are you done adding y/n?");
                 done = Console.ReadLine().ToLower();   
