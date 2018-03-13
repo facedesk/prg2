@@ -24,6 +24,50 @@ namespace _0_main
             Console.WriteLine("Im testing node");
             string done = "";
             
+            Node<double> n0 = new Node<double>(3.50);
+            n0.next = new Node<double>(5.5,n0.root);
+            n0++;
+            n0.next = new Node<double>(15.0,n0.root);
+            n0++;
+            n0 = n0.root;
+            
+            n0.Print();
+            n0.next.Print();
+            Swapper<double>.Swap(n0,n0.next);
+            n0.Print();
+            n0.next.Print();
+
+            /*if(n0.next == n0.next.next)
+            {
+                Console.WriteLine("yay");
+            }
+            Node<double> n10= n0;
+            if(n0==n10)
+            {
+                Console.WriteLine("nay");
+            }
+
+
+            n0[0].Print();
+            n0[1].Print();
+            n0[400].Print();
+
+            Node<double> k = n0[15];
+*/
+            /*if(n0 == n1)
+            {
+                Console.WriteLine("they are equal");
+            }
+            else
+            {
+                Console.WriteLine("they are not equal");
+            }*/
+
+
+
+
+
+
             Node<int> linkedList = new Node<int>(0);
             Node<int> root = linkedList;
             while(done != "y")
