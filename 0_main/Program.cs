@@ -15,10 +15,19 @@ namespace _0_main
         {
             
            Console.WriteLine("Launching main");
-           NodeTest();
+           //NodeTest();
+           //HigherOrderTest();
+           HW.Test();
            Console.ReadKey();
         
         }
+
+        private static void HigherOrderTest()
+        {
+            Select s  = new Select();
+            s.run();
+        }
+
         static void NodeTest()
         {
             Console.WriteLine("Im testing node");
