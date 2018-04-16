@@ -1,3 +1,6 @@
+namespace prg2._3_design_patterns
+{
+
 public sealed class SingletonThreadSafe
 {
     private SingletonThreadSafe()
@@ -16,4 +19,5 @@ public sealed class SingletonThreadSafe
 
         internal static readonly SingletonThreadSafe instance = new SingletonThreadSafe();
     }
+}
 }

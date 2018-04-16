@@ -1,5 +1,7 @@
 using System;
 
+namespace prg2._3_design_patterns
+{
 public class Singleton
 {
    private static Singleton instance;
@@ -17,4 +19,5 @@ public class Singleton
          return instance;
       }
    }
+}
 }

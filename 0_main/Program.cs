@@ -13,15 +13,71 @@ namespace _0_main
     {
         static void Main(string[] args)
         {
-            
            Console.WriteLine("Launching main");
            //NodeTest();
            //HigherOrderTest();
-           HW.Test();
+//           HW.Test();
+           DesignPatternsTest();
            Console.ReadKey();
         
         }
+        private static void StudentPatternsTest()
+        {
+            /* Test!!!!!!!*/
+            //test Decorator pattern
 
+
+            //test Factory pattern
+
+
+            //test Singleton
+
+
+        }
+
+
+
+
+
+        private static void DesignPatternsTest()
+        {
+            NameBank nb = new NameBank();
+            nb.Name = "Yoon Junsu";
+            Console.WriteLine(nb.NameUpper);
+            Console.WriteLine(nb.First);  
+            Console.WriteLine(nb.Last);
+            nb.Name = "John Jacob Jingle-Heimer Schmidt";
+            Console.WriteLine(nb.NameUpper);
+            Console.WriteLine(nb.First);  
+            Console.WriteLine(nb.Last);
+
+            Factory factory = new Factory();
+
+            Console.WriteLine(@"What consumable would you like? 
+            Press 0 for coffee
+            Press 1 for Grain
+            Press 2 for Filters
+            Press 3 for an error message
+            ");
+            int choice = Convert.ToInt32(Console.ReadLine());
+            Consumable c = factory.ConsumableCreator((Consumables)choice);
+            Console.WriteLine(c.GetType());
+            
+            Consumables typeofthing = Consumables.Grain;
+            ourBoolean b = ourBoolean.False;
+
+            if(b == ourBoolean.Unknown)
+            {
+                Console.WriteLine("we have no idea");
+            }
+
+            Console.WriteLine(typeofthing.GetType());
+
+            Console.WriteLine(Singleton.Instance);
+            Console.WriteLine(Singleton.Instance);
+            
+
+        }
         private static void HigherOrderTest()
         {
             Select s  = new Select();
